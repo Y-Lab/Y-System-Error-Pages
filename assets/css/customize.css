@@ -1,0 +1,51 @@
+/* customize.css */
+
+.hidden.menu {
+    display: none;
+}
+
+.masthead .ui.menu .ui.button {
+    margin-left: 0.5em;
+}
+
+.ui.logo.image {
+    width: 22px;
+    margin-right: 0.5em;
+}
+.item.logo span {
+    font-size: 22px;
+}
+
+.footer.segment {
+    padding: 5em 0em;
+}
+
+.borderless.inverted.menu .toc.item {
+    display: none;
+}
+
+.borderless.inverted.menu .toc.item:active,
+.borderless.inverted.menu .toc.item:hover,
+.borderless.inverted.menu .toc.item:focus {
+    background: none;
+}
+
+#contacts-dimmer div.item {
+    font-size: 2em;
+}
+
+@media only screen and (max-width: 767px) {
+    .ui.fixed.menu {
+        display: none !important;
+    }
+    .borderless.inverted.menu .item,
+    .borderless.inverted.menu .menu {
+        display: none;
+    }
+    .borderless.inverted.menu .toc.item {
+        display: block;
+    }
+    #contacts-dimmer div.item {
+        font-size: 1em;
+    }
+}
