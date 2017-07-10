@@ -165,18 +165,14 @@
                         <h4 class="ui inverted header">关于我们</h4>
                         <div class="ui inverted link list">
                             <a id="contacts-footer-link" class="item"><i class="fa fa-phone fa-fw"></i> 400-876-3898</a>
-                            <div id="contacts-dimmer" class="ui page dimmer">
+                            <div id="contacts-modal" class="ui small modal">
+                                <i class="close icon"></i>
+                                <div class="header"><i class="address card outline icon"></i>联系方式</div>
                                 <div class="content">
-                                    <div class="ui center list">
-                                        <div class="item"><i class="fa fa-phone fa-fw"></i> 400-876-3898</div>
-                                        <div class="item">
-                                            <i class="fa fa-send fa-fw"></i>
-                                            <a href="mailto:service@y-english.org?subject=Mail From Y-System Website">service@y-english.org</a>
-                                        </div>
-                                        <div class="item">
-                                            <i class="fa fa-map-marker fa-fw"></i>
-                                            <a href="http://j.map.baidu.com/ukltC" target="_blank">北京 &middot; 海淀 &middot; 五道口 &middot; 华清商务会馆1707室</a>
-                                        </div>
+                                    <div class="ui large link list">
+                                        <div class="item"><i class="phone icon"></i>400-876-3898</div>
+                                        <a class="item" href="mailto:service@y-english.org?subject=Mail From Y-System Website"><i class="mail icon"></i>service@y-english.org</a>
+                                        <a class="item" href="http://j.map.baidu.com/ukltC" target="_blank"><i class="marker icon"></i>北京 &middot; 海淀 &middot; 五道口 &middot; 华清商务会馆1707室</a>
                                     </div>
                                 </div>
                             </div>
@@ -207,49 +203,36 @@
     <!-- Customized JS -->
     <script type="text/javascript">
     // customize.js
-    $(document)
-        .ready(function() {
-            // fix menu when passed
-            $('.masthead')
-                .visibility({
-                    once: false,
-                    onBottomPassed: function() {
-                        $('.fixed.menu').transition('fade in');
-                    },
-                    onBottomPassedReverse: function() {
-                        $('.fixed.menu').transition('fade out');
-                    }
-                })
-            ;
-            // create sidebar and attach to menu open
-            $('.ui.sidebar').sidebar('attach events', '.toc.item');
-        })
-    ;
+    $(document).ready(function () {
+        // fix menu when passed
+        $('.masthead').visibility({
+            once: false,
+            onBottomPassed: function () {
+                $('.fixed.menu').transition('fade in');
+            },
+            onBottomPassedReverse: function () {
+                $('.fixed.menu').transition('fade out');
+            }
+        });
+        // create sidebar and attach to menu open
+        $('.ui.sidebar').sidebar('attach events', '.toc.item');
+    });
 
     // popup wechat qr code
-    $('#wechat-qr-code-click')
-        .popup({
-            popup: $('#wechat-qr-code'),
-            on: 'click'
-        })
-    ;
+    $('#wechat-qr-code-click').popup({
+        popup: $('#wechat-qr-code'),
+        on: 'click'
+    });
 
     // footer copyright
-    $('#copyright')
-        .html(
-             function(){
-                 var date = new Date();
-                 return '<i class="fa fa-copyright fa-fw"></i> 2011-' +  date.getFullYear() + ' 云英语 版权所有';
-             }
-        )
-    ;
+    $('#copyright').html(function (){
+        return '<i class="fa fa-copyright fa-fw"></i> 2011-' +  new Date().getFullYear() + ' 云英语 版权所有';
+    });
 
     // footer contacts
-    $('#contacts-footer-link')
-        .on('click', function () {
-            $('#contacts-dimmer').dimmer('show');
-        })
-    ;
+    $('#contacts-footer-link').click(function () {
+        $('#contacts-modal').modal('show');
+    });
     </script>
 </body>
 </html>
