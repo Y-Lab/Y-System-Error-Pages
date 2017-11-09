@@ -20,59 +20,59 @@
 
     <!-- Customized CSS -->
     <style type="text/css">
-    .logo-image {
-        width: 30px;
-    }
-    .logo-text {
-        margin-left: 10px;
-        font-size: 1.6em;
-        font-weight: normal;
-        display: inline-block;
-        vertical-align: middle;
-    }
+        .logo-image {
+            width: 30px;
+        }
+        .logo-text {
+            margin-left: 10px;
+            font-size: 1.6em;
+            font-weight: normal;
+            display: inline-block;
+            vertical-align: middle;
+        }
 
-    .footer.segment {
-        padding: 5em 0em;
-    }
+        .footer.segment {
+            padding: 5em 0em;
+        }
 
-    .masthead.segment {
-        min-height: 550px;
-        padding: 1em 0em;
-    }
-    .masthead h1.ui.header {
-        margin-top: 1em;
-        margin-bottom: 0em;
-        font-size: 8em;
-        font-weight: normal;
-    }
-    .masthead h2 {
-        font-size: 1.7em;
-        font-weight: normal;
-    }
-    .masthead a.ui.button {
-        margin: auto;
-    }
-
-    #contacts-dimmer div.item {
-        font-size: 2em;
-    }
-
-    @media only screen and (max-width: 767px) {
         .masthead.segment {
-            min-height: 300px;
+            min-height: 550px;
+            padding: 1em 0em;
         }
         .masthead h1.ui.header {
             margin-top: 1em;
-            font-size: 4em;
+            margin-bottom: 0em;
+            font-size: 8em;
+            font-weight: normal;
         }
-        .masthead h2 {
-            margin-top: 0.5em;
-            font-size: 1.2em;
+        .masthead h2.ui.header {
+            font-size: 1.7em;
+            font-weight: normal;
         }
+        .masthead a.ui.button {
+            margin: auto;
+        }
+
         #contacts-dimmer div.item {
-            font-size: 1em;
+            font-size: 2em;
         }
-    }
+
+        @media only screen and (max-width: 767px) {
+            .masthead.segment {
+                min-height: 300px;
+            }
+            .masthead h1.ui.header {
+                margin-top: 1em;
+                font-size: 4em;
+            }
+            .masthead h2.ui.header {
+                margin-top: 0.5em;
+                font-size: 1.2em;
+            }
+            #contacts-dimmer div.item {
+                font-size: 1em;
+            }
+        }
     </style>
 
     <!-- Favicons -->
@@ -94,7 +94,7 @@
         </div>
         <div class="ui text container">
             <h1 class="ui inverted header">504</h1>
-            <h2>网关超时！(>_<)</h2>
+            <h2 class="ui inverted header">网关超时！(>_<)</h2>
         </div>
     </div>
 
@@ -157,7 +157,7 @@
                         </div>
                     </div>
                     <div class="seven wide column">
-                        <h4 class="ui inverted header">云英语教育服务支撑系统 &middot; Y-System</h4>
+                        <h4 class="ui inverted header">云英语 &middot; Y-English</h4>
                         <div class="ui inverted link list">
                             <div id="copyright" class="item"></div>
                             <a class="item" href="http://www.miitbeian.gov.cn/" target="_blank"><i class="fa fa-shield fa-fw"></i> 京ICP备11017771号</a>
@@ -176,21 +176,21 @@
 
     <!-- Customized JS -->
     <script type="text/javascript">
-    // popup wechat qrcode
-    $('#wechat-mp-qrcode-trigger').popup({
-        popup: $('#wechat-mp-qrcode'),
-        on: 'click'
-    });
+        // popup wechat qrcode
+        $('#wechat-mp-qrcode-trigger').popup({
+            popup: $('#wechat-mp-qrcode'),
+            on: 'click'
+        });
 
-    // footer copyright
-    $('#copyright').html(function (){
-        return '<i class="fa fa-copyright fa-fw"></i> 2011-' +  new Date().getFullYear() + ' 云英语 版权所有';
-    });
+        // footer copyright
+        $('#copyright').html(function (){
+            return '<i class="fa fa-copyright fa-fw"></i> 2011-' +  new Date().getFullYear() + ' 云英语 版权所有';
+        });
 
-    // footer contacts
-    $('#contacts-footer-link').click(function () {
-        $('#contacts-modal').modal('show');
-    });
+        // footer contacts
+        $('#contacts-footer-link').click(function () {
+            $('#contacts-modal').modal('show');
+        });
     </script>
 </body>
 </html>
