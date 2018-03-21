@@ -2,184 +2,182 @@
 <html>
 <head>
     <!-- Standard Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 
-    <!-- Site Properties -->
-    <title>403 &middot; 云英语</title>
-    <meta name="author" content="iROCKBUNNY">
-    <meta name="description" content="Y-System: Y-English Education Service Support System">
-    <meta name="keywords" content="Y-English, Y-System, English, Education">
+<!-- Site Properties -->
+<title>403 &middot; 云英语</title>
+<meta name="author" content="iROCKBUNNY">
+<meta name="description" content="Y-System: Y-English Education Service Support System">
+<meta name="keywords" content="Y-English, Y-System, English, Education">
 
-    <!-- Semantic UI CSS -->
-    <link rel="stylesheet" type="text/css" href="//static.y-english.org/assets/ui/semantic.min.css">
+<!-- Semantic UI CSS -->
+<link rel="stylesheet" type="text/css" href="//static.y-english.org/assets/ui/semantic.min.css">
 
-    <!-- Customized CSS -->
-    <style type="text/css">
-        .logo-image {
-            width: 30px;
-        }
-        .logo-text {
-            margin-left: 10px;
-            font-size: 1.6em;
-            font-weight: normal;
-            display: inline-block;
-            vertical-align: middle;
-        }
+<!-- Customized CSS -->
+<style type="text/css">
+    .logo-image {
+        width: 30px;
+    }
+    .logo-text {
+        margin-left: 10px;
+        font-size: 1.6em;
+        font-weight: normal;
+        display: inline-block;
+        vertical-align: middle;
+    }
 
-        .footer.segment {
-            padding: 5em 0em;
-        }
+    .footer.segment {
+        padding: 5em 0em;
+    }
 
+    .masthead.segment {
+        min-height: 550px;
+        padding: 1em 0em;
+    }
+    .masthead h1.ui.header {
+        margin-top: 1em;
+        margin-bottom: 0em;
+        font-size: 8em;
+        font-weight: normal;
+    }
+    .masthead h2.ui.header {
+        font-size: 1.7em;
+        font-weight: normal;
+    }
+    .masthead a.ui.button {
+        margin: auto;
+    }
+
+    #contacts-modal .card .qrcode.image {
+        padding: 1em;
+        background: none;
+    }
+
+    @media only screen and (max-width: 767px) {
         .masthead.segment {
-            min-height: 550px;
-            padding: 1em 0em;
+            min-height: 300px;
         }
         .masthead h1.ui.header {
             margin-top: 1em;
-            margin-bottom: 0em;
-            font-size: 8em;
-            font-weight: normal;
+            font-size: 4em;
         }
         .masthead h2.ui.header {
-            font-size: 1.7em;
-            font-weight: normal;
+            margin-top: 0.5em;
+            font-size: 1.2em;
         }
-        .masthead a.ui.button {
-            margin: auto;
-        }
+    }
+</style>
 
-        #contacts-modal .card .qrcode.image {
-            padding: 1em;
-            background: none;
-        }
-
-        @media only screen and (max-width: 767px) {
-            .masthead.segment {
-                min-height: 300px;
-            }
-            .masthead h1.ui.header {
-                margin-top: 1em;
-                font-size: 4em;
-            }
-            .masthead h2.ui.header {
-                margin-top: 0.5em;
-                font-size: 1.2em;
-            }
-        }
-    </style>
-
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" href="//static.y-english.org/apple-touch-icon.png">
-    <link rel="icon" type="image/x-icon" href="//static.y-english.org/favicon.ico">
+<!-- Favicons -->
+<link rel="apple-touch-icon" href="//static.y-english.org/apple-touch-icon.png">
+<link rel="icon" type="image/x-icon" href="//static.y-english.org/favicon.ico">
 </head>
 <body>
     <!-- Page Contents -->
     <div class="ui inverted vertical masthead center aligned segment">
         <div class="ui container">
-            <div class="ui large borderless inverted menu">
-                <div class="header item">
-                    <div class="ui middle aligned image">
-                        <svg class="logo-image" version="1.1" viewBox="0 0 512 512"><path d="M65.14,85.95C13.42,144.72-7.42,213.56,2.33,291.3,6.65,325.69,17.47,358,36.12,387.49c0.52,0.82,1.22,1.53,2.21,2.76,0.88-14.91,4.78-28.06,13.45-39.48,15-19.68,35.1-30.34,59.41-33,9.68-1.06,19.5-.93,29.67-1.36a88,88,0,0,1-13.5-23.52c-15.54-39.51-19.7-80.09-9.5-121.47,12-48.75,40.3-85.16,85.8-107,39.69-19.06,80.8-20.14,122.45-6.73,20.61,6.63,39.27,16.76,54.89,32,36.38,35.54,51.18,89.44,37.3,138.35-8.83,31.12-27.5,54.49-57.43,68-16.43,7.39-33.86,9-51.69,8.48-19.17-.56-35.94-7.11-50.93-18.8a54,54,0,0,1-17.65-23.59,95.49,95.49,0,0,1-5.95-26.15c-1.29-14.79-.26-29.27,4.86-43.41,2.26-6.25,6.68-8.5,12.55-9a23.83,23.83,0,0,1,6.29.64c6.76,1.24,13.53,2.32,20.42,1.3,7.48-1.11,13.2-4.55,15.61-12.2a26.46,26.46,0,0,0,.91-14c-2.89-12.85-11.35-20.25-23.7-23.36-11.32-2.85-22.41-.94-33.14,3-19.66,7.18-33.54,21.06-43.46,39a121.14,121.14,0,0,0-14.17,77.57c2.81,19.44,9,37.86,20.75,53.85C226.27,343,260,360,301.42,361.83c31.39,1.41,61.71-4.43,91.25-14.61,30.4-10.48,59-24.55,85-43.63,11.49-8.43,22.06-17.85,30.79-29.22a15,15,0,0,0,3.31-8.93,245.34,245.34,0,0,0-3.7-54.1c-10.51-57.5-37-106.47-80.69-145.32C365.78,11.2,293.52-9.44,212.31,4,153.78,13.61,104.32,41.42,65.14,85.95Z" fill="#FFF"/><path d="M505.48,310.21A206.92,206.92,0,0,1,475.81,335a373,373,0,0,1-96.61,47.72c-27,8.81-54.66,13.5-83.21,12.92a182.54,182.54,0,0,1-89-24.74c-8.05-4.65-16-9.47-24.13-14-18.22-10.14-37.59-15.34-58.64-13.74-22.56,1.72-40.15,12-52.53,30.68-12,18-13.89,37-2.54,56.26a36.43,36.43,0,0,0,13.09,13,21.21,21.21,0,0,0,28.46-6.74c3.18-5,2.26-7.76-3.27-9.59-2-.66-4.08-1.16-6.12-1.71-5.69-1.54-9.23-5.39-11.12-10.76-2.93-8.31-2.53-16.56,2.23-24,7.24-11.31,17.26-19,30.77-21.49a59.27,59.27,0,0,1,31.31,2.87c30.95,11.23,39,39.78,34.85,60.69-3.33,17-13.59,29.41-28.51,37.9-10.74,6.11-22.43,7.54-34.58,6,70.7,42.74,164.46,49.44,246.88,7.61C455.16,442.23,496.65,362.71,505.48,310.21Z" fill="#FFF"/></svg>
-                    </div>
-                    <div class="logo-text">云英语</div>
-                </div>
+    <div class="ui large borderless inverted menu">
+        <div class="header item">
+            <div class="ui middle aligned image">
+                <svg class="logo-image" version="1.1" viewBox="0 0 512 512"><path d="M65.14,85.95C13.42,144.72-7.42,213.56,2.33,291.3,6.65,325.69,17.47,358,36.12,387.49c0.52,0.82,1.22,1.53,2.21,2.76,0.88-14.91,4.78-28.06,13.45-39.48,15-19.68,35.1-30.34,59.41-33,9.68-1.06,19.5-.93,29.67-1.36a88,88,0,0,1-13.5-23.52c-15.54-39.51-19.7-80.09-9.5-121.47,12-48.75,40.3-85.16,85.8-107,39.69-19.06,80.8-20.14,122.45-6.73,20.61,6.63,39.27,16.76,54.89,32,36.38,35.54,51.18,89.44,37.3,138.35-8.83,31.12-27.5,54.49-57.43,68-16.43,7.39-33.86,9-51.69,8.48-19.17-.56-35.94-7.11-50.93-18.8a54,54,0,0,1-17.65-23.59,95.49,95.49,0,0,1-5.95-26.15c-1.29-14.79-.26-29.27,4.86-43.41,2.26-6.25,6.68-8.5,12.55-9a23.83,23.83,0,0,1,6.29.64c6.76,1.24,13.53,2.32,20.42,1.3,7.48-1.11,13.2-4.55,15.61-12.2a26.46,26.46,0,0,0,.91-14c-2.89-12.85-11.35-20.25-23.7-23.36-11.32-2.85-22.41-.94-33.14,3-19.66,7.18-33.54,21.06-43.46,39a121.14,121.14,0,0,0-14.17,77.57c2.81,19.44,9,37.86,20.75,53.85C226.27,343,260,360,301.42,361.83c31.39,1.41,61.71-4.43,91.25-14.61,30.4-10.48,59-24.55,85-43.63,11.49-8.43,22.06-17.85,30.79-29.22a15,15,0,0,0,3.31-8.93,245.34,245.34,0,0,0-3.7-54.1c-10.51-57.5-37-106.47-80.69-145.32C365.78,11.2,293.52-9.44,212.31,4,153.78,13.61,104.32,41.42,65.14,85.95Z" fill="#FFF"/><path d="M505.48,310.21A206.92,206.92,0,0,1,475.81,335a373,373,0,0,1-96.61,47.72c-27,8.81-54.66,13.5-83.21,12.92a182.54,182.54,0,0,1-89-24.74c-8.05-4.65-16-9.47-24.13-14-18.22-10.14-37.59-15.34-58.64-13.74-22.56,1.72-40.15,12-52.53,30.68-12,18-13.89,37-2.54,56.26a36.43,36.43,0,0,0,13.09,13,21.21,21.21,0,0,0,28.46-6.74c3.18-5,2.26-7.76-3.27-9.59-2-.66-4.08-1.16-6.12-1.71-5.69-1.54-9.23-5.39-11.12-10.76-2.93-8.31-2.53-16.56,2.23-24,7.24-11.31,17.26-19,30.77-21.49a59.27,59.27,0,0,1,31.31,2.87c30.95,11.23,39,39.78,34.85,60.69-3.33,17-13.59,29.41-28.51,37.9-10.74,6.11-22.43,7.54-34.58,6,70.7,42.74,164.46,49.44,246.88,7.61C455.16,442.23,496.65,362.71,505.48,310.21Z" fill="#FFF"/></svg>
             </div>
+            <div class="logo-text">云英语</div>
         </div>
+    </div>
+</div>
         <div class="ui text container">
             <h1 class="ui inverted header">403</h1>
             <h2 class="ui inverted header">您没权限访问这里喏！(>_<)</h2>
         </div>
     </div>
-
     <div class="ui inverted vertical footer segment">
-        <div class="ui container">
-            <div class="ui stackable inverted divided equal height stackable grid">
-                <div class="three wide column">
-                    <h4 class="ui inverted header">技术支持</h4>
-                    <div class="ui inverted link list">
-                        <a class="item" href="http://flask.pocoo.org/" target="_blank">Flask</a>
-                        <a class="item" href="https://semantic-ui.com/" target="_blank">Semantic UI</a>
-                    </div>
+    <div class="ui container">
+        <div class="ui stackable inverted divided equal height stackable grid">
+            <div class="three wide column">
+                <h4 class="ui inverted header">技术支持</h4>
+                <div class="ui inverted link list">
+                    <a class="item" href="http://flask.pocoo.org/" target="_blank">Flask</a>
+                    <a class="item" href="https://semantic-ui.com/" target="_blank">Semantic UI</a>
                 </div>
-                <div class="three wide column">
-                    <h4 class="ui inverted header">关于我们</h4>
-                    <div class="ui inverted link list">
-                        <a class="item" href="http://live.y-english.org/about/" target="_blank"><i class="industry icon"></i> 企业简介</a>
-                        <a class="item" href="http://live.y-english.org/career/" target="_blank"><i class="user plus icon"></i> 招聘信息</a>
-                    </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header">关于我们</h4>
+                <div class="ui inverted link list">
+                    <a class="item" href="http://live.y-english.org/about/" target="_blank"><i class="industry icon"></i> 企业简介</a>
+                    <a class="item" href="http://live.y-english.org/career/" target="_blank"><i class="user plus icon"></i> 招聘信息</a>
                 </div>
-                <div class="three wide column">
-                    <h4 class="ui inverted header">联系方式</h4>
-                    <div class="ui inverted link list">
-                        <a id="contacts-footer-link" class="item"><i class="phone icon"></i> 400-876-3898</a>
-                        <div id="contacts-modal" class="ui small modal">
-                            <i class="close icon"></i>
-                            <div class="header"><i class="address card icon"></i>联系方式</div>
-                            <div class="content">
-                                <div class="ui two stackable cards">
-                                    <div class="red card">
-                                        <div class="content">
-                                            <div class="header"><i class="red info icon"></i>咨询报名</div>
-                                        </div>
-                                        <div class="qrcode image">
-                                            <img src="data:image/png;base64,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" alt="Wechat QR Code">
-                                        </div>
-                                        <div class="extra content"><i class="weixin icon"></i>扫一扫上面的二维码图案，加我微信</div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header">联系方式</h4>
+                <div class="ui inverted link list">
+                    <a id="contacts-footer-link" class="item"><i class="phone icon"></i> 400-876-3898</a>
+                    <div id="contacts-modal" class="ui small modal">
+                        <i class="close icon"></i>
+                        <div class="header"><i class="address card icon"></i>联系方式</div>
+                        <div class="content">
+                            <div class="ui two stackable cards">
+                                <div class="red card">
+                                    <div class="content">
+                                        <div class="header"><i class="red info icon"></i>咨询报名</div>
                                     </div>
-                                    <div class="blue card">
-                                        <div class="content">
-                                            <div class="header"><i class="blue handshake outline icon"></i>商业合作</div>
-                                        </div>
-                                        <div class="qrcode image">
-                                            <img src="data:image/png;base64,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" alt="Wechat QR Code">
-                                        </div>
-                                        <div class="extra content"><i class="weixin icon"></i>扫一扫上面的二维码图案，加我微信</div>
+                                    <div class="qrcode image">
+                                        <img src="data:image/png;base64,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" alt="Wechat QR Code">
                                     </div>
+                                    <div class="extra content"><i class="weixin icon"></i>扫一扫上面的二维码图案，加我微信</div>
                                 </div>
-                                <div class="ui large link list">
-                                    <div class="item"><i class="phone icon"></i>400-876-3898 &middot; 010-82863898</div>
-                                    <a class="item" href="http://j.map.baidu.com/ukltC" target="_blank"><i class="map marker alternate icon"></i>北京 &middot; 海淀 &middot; 五道口 &middot; 华清商务会馆1707室</a>
+                                <div class="blue card">
+                                    <div class="content">
+                                        <div class="header"><i class="blue handshake outline icon"></i>商业合作</div>
+                                    </div>
+                                    <div class="qrcode image">
+                                        <img src="data:image/png;base64,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" alt="Wechat QR Code">
+                                    </div>
+                                    <div class="extra content"><i class="weixin icon"></i>扫一扫上面的二维码图案，加我微信</div>
                                 </div>
                             </div>
+                            <div class="ui large link list">
+                                <div class="item"><i class="phone icon"></i>400-876-3898 &middot; 010-82863898</div>
+                                <a class="item" href="http://j.map.baidu.com/ukltC" target="_blank"><i class="map marker alternate icon"></i>北京 &middot; 海淀 &middot; 五道口 &middot; 华清商务会馆1707室</a>
+                            </div>
                         </div>
-                        <a class="item popup-item-click" data-html="<img class='ui small image' src='data:image/png;base64,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' alt='Wechat QR Code'>" data-position="top left"><i class="weixin icon"></i> 微信公众号</a>
                     </div>
+                    <a class="item popup-item-click" data-html="<img class='ui small image' src='data:image/png;base64,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' alt='Wechat QR Code'>" data-position="top left"><i class="weixin icon"></i> 微信公众号</a>
                 </div>
-                <div class="seven wide column">
-                    <h4 class="ui inverted header">云英语教育服务支撑系统 &middot; Y-System</h4>
-                    <div class="ui inverted link list">
-                        <a id="copyright" class="item loading-trigger" href="http://live.y-english.org/" target="_blank"></a>
-                        <a class="item" href="http://www.miitbeian.gov.cn/" target="_blank"><i class="shield alternate icon"></i> 京ICP备11017771号</a>
-                    </div>
+            </div>
+            <div class="seven wide column">
+                <h4 class="ui inverted header">云英语教育服务支撑系统 &middot; Y-System</h4>
+                <div class="ui inverted link list">
+                    <a id="copyright" class="item loading-trigger" href="http://live.y-english.org/" target="_blank"></a>
+                    <a class="item" href="http://www.miitbeian.gov.cn/" target="_blank"><i class="shield alternate icon"></i> 京ICP备11017771号</a>
                 </div>
             </div>
         </div>
     </div>
-
+</div>
     <!-- jQuery -->
-    <script type="text/javascript" src="//static.y-english.org/assets/basic/js/jquery.min.js"></script>
+<script type="text/javascript" src="//static.y-english.org/assets/basic/js/jquery.min.js"></script>
 
-    <!-- Semantic UI JS -->
-    <script type="text/javascript" src="//static.y-english.org/assets/ui/semantic.min.js"></script>
+<!-- Semantic UI JS -->
+<script type="text/javascript" src="//static.y-english.org/assets/ui/semantic.min.js"></script>
 
-    <!-- Customized JS -->
-    <script type="text/javascript">
-        // popup wechat qrcode
-        $('.popup-item-click').popup({
-            on: 'click'
-        });
+<!-- Customized JS -->
+<script type="text/javascript">
+    // popup wechat qrcode
+    $('.popup-item-click').popup({
+        on: 'click'
+    });
 
-        // footer copyright
-        $('#copyright').html(function () {
-            return '<i class="copyright outline icon"></i> 2011-' +  new Date().getFullYear() + ' 云英语 版权所有';
-        });
+    // footer copyright
+    $('#copyright').html(function () {
+        return '<i class="copyright outline icon"></i> 2011-' +  new Date().getFullYear() + ' 云英语 版权所有';
+    });
 
-        // footer contacts
-        $('#contacts-footer-link').click(function () {
-            $('#contacts-modal').modal('show');
-        });
-    </script>
+    // footer contacts
+    $('#contacts-footer-link').click(function () {
+        $('#contacts-modal').modal('show');
+    });
+</script>
 </body>
 </html>
